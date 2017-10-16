@@ -51,7 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Active.js" />
      <Compile Include="Assets\ButtonAdd.js" />
+     <Compile Include="Assets\Delete.js" />
      <Compile Include="Assets\KeypadSystem_.js" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
