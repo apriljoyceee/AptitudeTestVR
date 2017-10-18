@@ -3,6 +3,8 @@
 import System.Collections;
 import UnityEngine;
 import UnityEngine.UI;
+import UnityEngine.SceneManagement;
+
 var button : UI.Image;
 var code : UI.Text;
 var Hover : Color;
@@ -28,10 +30,11 @@ function Update () {
 			//button.Color=Hover;
 			if (timer >= gazeTime) {
 						if(code.text=="12"){
-							Debug.Log ("DATABASE PLEASE");
 							beepaudio.volume = 0.5;
 							beepaudio.pitch = 1;
 							beepaudio.Play();
+							//DATABASE STUDENT OK
+							SceneManager.LoadScene("TestScene");
 						}
 						else{
 							code.text = "";

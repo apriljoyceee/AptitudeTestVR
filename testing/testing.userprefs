@@ -1,14 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonAdd.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Active.js">
     <Files>
       <File FileName="Assets\Scripts\QuestionsManager.cs" Line="1" Column="1" />
       <File FileName="Assets\GoogleVR\Scripts\UI\GvrReticlePointer.cs" Line="1" Column="1" />
       <File FileName="Assets\KeypadSystem_.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StartCcript.cs" Line="1" Column="1" />
-      <File FileName="Assets\ButtonAdd.js" Line="52" Column="25" />
-      <File FileName="Assets\Delete.js" Line="47" Column="25" />
-      <File FileName="Assets\Active.js" Line="53" Column="25" />
+      <File FileName="Assets\ButtonAdd.js" Line="1" Column="1" />
+      <File FileName="Assets\Delete.js" Line="1" Column="1" />
+      <File FileName="Assets\Active.js" Line="37" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
