@@ -90,6 +90,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 05d7814a54ff9d6b4b99cd2ce7421f90 Assembly-CSharp.dll:.TranslateScrollEffect
 ae8ffb8c4d496c33aced3230420b614c Assembly-CSharp.dll:.GvrArmModel
 03bbed44bf0809da9eb453e702673301 Assembly-CSharp.dll:.GvrAudioRoom
+af903af68a4c0e8ea1d65cf4a6ea8d21 Assembly-UnityScript.dll:.ButtonAdd
 7145f8261763e133c64c6e3d29fe65ca Assembly-CSharp.dll:.DemoInputManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GvrEditorEmulator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -127,12 +128,15 @@ c577e3c81322be1e48b1b04604ff2dbf Assembly-CSharp.dll:.JumpToPage
 213976e6ef69ef51b81ef082c04b8edb Assembly-CSharp.dll:.GvrFollowControllerPose
 5adc88bf7d1c618314bc1a0f0b3d6c47 Assembly-CSharp.dll:.GvrAudioSoundfield
 bb0ad8cb9cb04ab265277fa3ffe5f4ff Assembly-CSharp.dll:GVR.Events.ToggleAction
+e495f659ded6d5cc5cc106642a157120 Assembly-UnityScript.dll:.Active
 3a18cfdbb6cebc3c35f5817a12a10ece Assembly-CSharp.dll:GVR.Events.PositionSwapper
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
+b4a6ca61c81e34ff0eedd7736d2ef4d8 Assembly-CSharp.dll:.QuestionScript
+e495f659ded6d5cc5cc106642a157120 Assembly-UnityScript.dll:.Delete
 64e53bc128400f563a86ade43816f1c3 Assembly-CSharp.dll:.FloatTile
 3cdbcbe3eecc7b2618bb53f62d0d1466 Assembly-CSharp.dll:.PagedScrollRect
 03f12694d8815c5c1846b514244afecc Assembly-CSharp.dll:.GvrAllEventsTrigger
@@ -142,6 +146,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 07fa47575215f13cb6a7a76ce2f5bb55 Assembly-CSharp.dll:.PrefabPageProvider
 19fc27323532d4ef5ff7bd1ed99e59f3 Assembly-CSharp.dll:.GvrTrackedController
 d41e856001c43524a7a52471c8bf3b63 Assembly-CSharp.dll:.GvrLaserPointer
+d49c5102e8912cafb9f47400863d9b70 Assembly-CSharp.dll:.QuestionsManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -158,9 +163,11 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 1c952386af3ef6bd3c90a34c4fd12f6b Assembly-CSharp.dll:.Teleport
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GvrControllerTooltipsSimple
+05524b8f659e7bfe5756d1335fec24ba Assembly-UnityScript.dll:.KeypadSystem_
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AddButton
 19fc27323532d4ef5ff7bd1ed99e59f3 Assembly-CSharp.dll:.GvrControllerVisualManager
 0b2b7d532cef1ad9d2eb504d578d2421 Assembly-CSharp.dll:.GvrPointerPhysicsRaycaster
 145a2fa61e986ff4b79d8ce7959fc905 Assembly-CSharp.dll:.GvrRecenterOnlyController
