@@ -51,10 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Active.js" />
-     <Compile Include="Assets\ButtonAdd.js" />
-     <Compile Include="Assets\Delete.js" />
-     <Compile Include="Assets\KeypadSystem_.js" />
+     <Compile Include="Assets\Scripts\Active.js" />
+     <Compile Include="Assets\Scripts\ButtonAdd.js" />
+     <Compile Include="Assets\Scripts\Delete.js" />
+     <Compile Include="Assets\Scripts\KeypadSystem_.js" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
      <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
@@ -71,7 +71,6 @@
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
      <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
-     <None Include="Assets\Stylized Nature Environment\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -96,11 +95,26 @@
  <Reference Include="Google.ProtocolBuffers">
  <HintPath>C:/Users/April/Documents/testing/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
+ <Reference Include="Mono.Data">
+ <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/Mono.Data.dll</HintPath>
+ </Reference>
  <Reference Include="Mono.Data.Sqlite">
  <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
+ <Reference Include="Mono.Data.SqliteClient">
+ <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/Mono.Data.SqliteClient.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Configuration">
+ <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/System.Configuration.dll</HintPath>
+ </Reference>
  <Reference Include="System.Data">
  <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.EnterpriseServices">
+ <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/System.EnterpriseServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security">
+ <HintPath>C:/Users/April/Documents/testing/Assets/PlugIns/System.Security.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

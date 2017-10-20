@@ -8,7 +8,6 @@ public class StartCcript : MonoBehaviour {
 	private float timer;
 	private float gazeTime =2.5f;
 	private bool gazedAt;
-
 	// Use this for initialization
 	void Start () {
 		
@@ -20,7 +19,7 @@ public class StartCcript : MonoBehaviour {
 			timer += Time.deltaTime;
 
 			if (timer >= gazeTime) {
-				SceneManager.LoadScene("Scene1");
+				SceneManager.LoadScene("Aptitude Scene");
 			}
 		}
 		
