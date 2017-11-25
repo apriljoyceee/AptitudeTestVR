@@ -35,25 +35,24 @@ public class HighScoreManager : MonoBehaviour {
 
 	public void ConnectionDB()
 	{
-		if (Application.platform != RuntimePlatform.Android) {
-			connectionString = "URI=file:" + Application.dataPath + "/testingdb.sqlite";
-		}
-		else {
-			connectionString = Application.persistentDataPath + "/testingdb.sqlite";
+		connectionString = Application.streamingAssetsPath + "/testingdb.sqlite";
+		string filepath = Application.streamingAssetsPath + "/testingdb.sqlite";
 
-			if (!File.Exists (connectionString)) {
-				WWW load = new WWW ("jar:file://" + Application.dataPath + "!/assets/" + "testingdb.sqlite");
-				while (!load.isDone) {}
+		if (Application.platform == RuntimePlatform.Android)
+		{
+			WWW reader = new WWW(filepath);
+			while ( ! reader.isDone) {}
 
-				File.WriteAllBytes (connectionString, load.bytes);
-			}
+			string realPath = Application.persistentDataPath + "/db";
+			System.IO.File.WriteAllBytes(realPath, reader.bytes);
+			connectionString = realPath;
 		}
 	}
 
 	private void GetScores()
 	{
 
-		using (IDbConnection dbConnection = new SqliteConnection(connectionString))
+		using (IDbConnection dbConnection = new SqliteConnection("URI=file:" + connectionString))
 		{
 			dbConnection.Open();
 
@@ -69,8 +68,8 @@ public class HighScoreManager : MonoBehaviour {
 					{
 						highScores.Add (new HighScore (reader.GetInt32 (0), reader.GetString (2), reader.GetString (1), reader.GetString (3)));
 					}
-					//dbConnection.Close();
-					//reader.Close();
+					dbConnection.Close();
+					reader.Close();
 				}
 			}
 		}
