@@ -9,8 +9,8 @@ var code : UI.Text;
 var Hover : Color;
 var Original : Color;
 var addNumber : String;
-private var timer : float;
-private var gazeTime : float = 1.5f;
+private var timer : float =0f;
+private var gazeTime : float = 3f;
 private var gazedAt : boolean;
 
 public var beepaudio : AudioSource;
@@ -30,24 +30,26 @@ function Update () {
 				//	SceneManager.LoadScene("Scene1");
 			//	}
 			//button.Color=Hover;
-			if (timer >= gazeTime) {
+			if (timer >= 1.5f) {
 					if(KeypadSystem_.maxNumbers < 2){
 						code.text += addNumber;
 						KeypadSystem_.maxNumbers ++;
 						beepaudio.volume = 0.3;
 						beepaudio.pitch = 0.85;
 						beepaudio.Play();
-						Debug.Log ("1 is clicked");
 						timer=0f;
 
-					}
+					} 
 				}
 			}
 }
 
+public function Resetinator(){
+	timer = 0f;
+}
 public function PointerEnter(){
 		gazedAt=true;
-		Debug.Log ("Pointer Enter");
+		//Debug.Log ("Pointer Enter");
 		button.color = Hover;
 		beepaudio.volume = 0.3;
 		beepaudio.pitch = 0.1;
@@ -56,7 +58,7 @@ public function PointerEnter(){
 
 public function PointerExit(){
 		gazedAt=false;
-		Debug.Log ("Pointer Exit");
+	//	Debug.Log ("Pointer Exit");
 		beepaudio.Stop();
 		button.color = Original;
 }
