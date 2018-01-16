@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System;
 using System.Data;
 using Mono.Data.Sqlite;
@@ -13,17 +14,19 @@ using System.IO;
 
 public class Activate : MonoBehaviour {
 	public Text code;
-	private string studnum;
+	public static string studnum;
+	public static string studnum_db;
 	private Boolean gazedAt;
 	private float gazeTime = 1.5f;
 	private float timer = 0f;
 	private string connectionString;
 	private bool updateOn=true;
-
+	public GameObject ErrorPanel;
+	public GameObject KeypadPanel;
 
 	// Use this for initialization
 	void Start () {
-
+		//enabled = true;
 	}
 	
 	// Update is called once per frame
@@ -38,6 +41,7 @@ public class Activate : MonoBehaviour {
 		}
 
 	}
+
 	public void Resetinator(){
 		timer = 0f;
 	}
@@ -92,23 +96,35 @@ public class Activate : MonoBehaviour {
 
 					using (IDataReader reader = dbCmd.ExecuteReader ()) {
 						while (reader.Read ()) {
-							Debug.Log ("" + reader.GetString (1) + ", " + reader.GetString (2) + " " + reader.GetString (3) + "-" + reader.GetString (4) + "-" + reader.GetInt32 (5));
+							studnum_db = reader.GetString (1);
+							Debug.Log ("" + studnum_db + ", " + reader.GetString (2) + " " + reader.GetString (3) + "-" + reader.GetString (4) + "-" + reader.GetInt32 (5));
 						}
-						dbConnection.Close ();
-						reader.Close ();
-						enabled = false;
-						yield return null;
+						if (String.IsNullOrEmpty(studnum_db)) {
+							code.text = "NO RESULT";
+							//errorlg ();
+						} else {
+							dbConnection.Close ();
+							reader.Close ();
+							enabled = false;
+							SceneManager.LoadScene("TestScene");
+							yield return null;
+						}
 					}
+
+
 
 
 				}
 			}
 		}
 		enabled = true;
+
 	}
 
 
 
-
+	public void errorlg(){
+		ErrorPanel.SetActive (true);
+	}
 
 }
