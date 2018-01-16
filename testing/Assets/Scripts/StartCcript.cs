@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartCcript : MonoBehaviour {
 
-	private float timer;
-	private float gazeTime =2.5f;
+	private float gazeTime = 1.5f;
+	private float timer = 0f;
 	private bool gazedAt;
 	// Use this for initialization
 	void Start () {
@@ -17,12 +17,14 @@ public class StartCcript : MonoBehaviour {
 	void Update () {
 		if (gazedAt) {
 			timer += Time.deltaTime;
-
-			if (timer >= gazeTime) {
-				SceneManager.LoadScene("Aptitude Scene");
-			}
 		}
-		
+		if (timer >=1.5f) {
+			SceneManager.LoadScene("Aptitude Scene");
+		}
+	}
+
+	public void Resetinator(){
+		timer = 0f;
 	}
 
 	public void PointerEnter(){

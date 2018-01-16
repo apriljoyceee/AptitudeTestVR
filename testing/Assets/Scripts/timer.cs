@@ -16,7 +16,8 @@ public class timer : MonoBehaviour {
 		timeLeft -= Time.deltaTime;
 		minute = Mathf.FloorToInt (timeLeft / 60f);
 		second = Mathf.FloorToInt (timeLeft - minute * 60);
-		text.text = "Time " + minute.ToString () + ":" + second.ToString ();
+		//text.text = "Time " + minute.ToString () + ":" + second.ToString ();
+		text.text = "STUD: " +Activate.studnum;
      }
  
 }
