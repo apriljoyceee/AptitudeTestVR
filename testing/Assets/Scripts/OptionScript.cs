@@ -7,6 +7,7 @@ public class OptionScript : MonoBehaviour {
 	private float timer;
 	private float gazeTime = 1.5f;
 	private bool gazedAt;
+	public AudioSource beepaudio;
 	//public GameObject SettingsPanel;
 	// Use this for initialization
 	void Start () {
@@ -25,6 +26,7 @@ public class OptionScript : MonoBehaviour {
 	public void PointerEnter(){
 		//Debug.Log ("Pointer Enter");
 		gazedAt=true;
+		beepaudio.Play();
 	}
 
 	public void PointerExit(){
