@@ -19,7 +19,7 @@ public class StartCcript : MonoBehaviour {
 			timer += Time.deltaTime;
 		}
 		if (timer >=1.5f) {
-			SceneManager.LoadScene("Aptitude Scene");
+			SceneManager.LoadScene("Game");
 		}
 	}
 

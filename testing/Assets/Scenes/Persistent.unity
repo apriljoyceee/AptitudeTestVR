@@ -130,8 +130,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 301157636}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 271.5337, y: 340.1178, z: 594.9386}
+  m_LocalRotation: {x: -0.053321704, y: -0.6110051, z: 0.041305553, w: -0.788748}
+  m_LocalPosition: {x: -253.91254, y: 347.00574, z: -61.164883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -154,6 +154,7 @@ MonoBehaviour:
     pointsAddedForCorrectAnswer: 1
     questions:
     - questionText: Anong tama?
+      category: 1
       answers:
       - answerText: Pawer
         isCorrect: 0
@@ -162,12 +163,14 @@ MonoBehaviour:
       - answerText: Power
         isCorrect: 0
     - questionText: Sino pogi?
+      category: 1
       answers:
       - answerText: Junnie Boy
         isCorrect: 0
       - answerText: Jasmin
         isCorrect: 1
     - questionText: Sino pogi ulet?
+      category: 1
       answers:
       - answerText: Sir Gatus
         isCorrect: 0

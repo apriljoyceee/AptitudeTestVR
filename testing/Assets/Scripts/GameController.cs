@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
 	public Text questionDisplayText;
 	public Text scoreDisplayText;
 	public Text timeRemainingDisplayText;
+
 	public SimpleObjectPool answerButtonObjectPool;
 	public Transform answerButtonParent;
 	public GameObject questionDisplay;
@@ -17,11 +18,14 @@ public class GameController : MonoBehaviour {
 	private DataController dataContoller;
 	private RoundData currentRoundData;
 	private QuestionData[] questionPool;
+	private QuestionData[] categoryy;
 
 	private bool isRoundActive;
 	private float timeRemaining;
 	private int questionIndex;
 	private int playerScore;
+	public static int category1;
+	private int category2;
 	private List<GameObject> answerButtonGameObjects = new List<GameObject> ();
 
 	// Use this for initialization
@@ -34,7 +38,8 @@ public class GameController : MonoBehaviour {
 
 		playerScore = 0;
 		questionIndex = 0;
-
+		category1 = 0;
+		category2 = 0;
 		ShowQuestion ();
 		isRoundActive = true;
 	}
@@ -69,6 +74,14 @@ public class GameController : MonoBehaviour {
 		if (isCorrect) {
 			playerScore += currentRoundData.pointsAddedForCorrectAnswer;
 			scoreDisplayText.text = "Score: " + playerScore.ToString ();
+
+			QuestionData questionData = questionPool [questionIndex];
+			if (questionData.category == "1") {
+				category1 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "2") {
+				category2 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
 		}
 		if (questionPool.Length > questionIndex + 1) {
 			questionIndex++;
@@ -88,7 +101,7 @@ public class GameController : MonoBehaviour {
 
 	public void ReturnToMenu()
 	{
-		SceneManager.LoadScene ("TestScene");
+		SceneManager.LoadScene ("MayTallyScene");
 	}
 
 	private void UpdateTimeRemainingDisplay()
