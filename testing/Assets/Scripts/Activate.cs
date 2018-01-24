@@ -21,9 +21,8 @@ public class Activate : MonoBehaviour {
 	private float timer = 0f;
 	private string connectionString;
 	private bool updateOn=true;
-	public GameObject ErrorPanel;
-	public GameObject KeypadPanel;
-
+	public AudioSource beepaudio;
+	public AudioSource wrongaudio;
 	// Use this for initialization
 	void Start () {
 		//enabled = true;
@@ -100,12 +99,14 @@ public class Activate : MonoBehaviour {
 							Debug.Log ("" + studnum_db + ", " + reader.GetString (2) + " " + reader.GetString (3) + "-" + reader.GetString (4) + "-" + reader.GetInt32 (5));
 						}
 						if (String.IsNullOrEmpty(studnum_db)) {
+							wrongaudio.Play();
 							code.text = "NO RESULT";
 							//errorlg ();
 						} else {
 							dbConnection.Close ();
 							reader.Close ();
 							enabled = false;
+							beepaudio.Play();
 							SceneManager.LoadScene("TestScene");
 							yield return null;
 						}
@@ -120,11 +121,6 @@ public class Activate : MonoBehaviour {
 		enabled = true;
 
 	}
-
-
-
-	public void errorlg(){
-		ErrorPanel.SetActive (true);
-	}
+		
 
 }
