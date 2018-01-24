@@ -8,6 +8,7 @@ public class StartCcript : MonoBehaviour {
 	private float gazeTime = 1.5f;
 	private float timer = 0f;
 	private bool gazedAt;
+	public AudioSource beepaudio;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +20,7 @@ public class StartCcript : MonoBehaviour {
 			timer += Time.deltaTime;
 		}
 		if (timer >=1.5f) {
+			beepaudio.Play();
 			SceneManager.LoadScene("Aptitude Scene");
 		}
 	}

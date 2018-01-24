@@ -170,6 +170,9 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\HighVolumeScript.cs" />
+     <Compile Include="Assets\LowVolumeScript.cs" />
+     <Compile Include="Assets\MedVolumeScript.cs" />
      <Compile Include="Assets\Scripts\Activate.cs" />
      <Compile Include="Assets\Scripts\AddButton.cs" />
      <Compile Include="Assets\Scripts\AnswerButton.cs" />
@@ -194,6 +197,8 @@
      <Compile Include="Assets\Scripts\timer.cs" />
      <Compile Include="Assets\Scripts\timercnt.cs" />
      <Compile Include="Assets\Scripts\TutorialScript.cs" />
+     <Compile Include="Assets\SettingsMenu.cs" />
+     <Compile Include="Assets\VolToggleScript.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
      <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
