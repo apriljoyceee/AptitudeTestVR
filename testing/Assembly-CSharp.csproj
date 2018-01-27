@@ -177,6 +177,7 @@
      <Compile Include="Assets\Scripts\AddButton.cs" />
      <Compile Include="Assets\Scripts\AnswerButton.cs" />
      <Compile Include="Assets\Scripts\AnswerData.cs" />
+     <Compile Include="Assets\Scripts\Category.cs" />
      <Compile Include="Assets\Scripts\Choice1Script.cs" />
      <Compile Include="Assets\Scripts\Choice1Try.cs" />
      <Compile Include="Assets\Scripts\DataController.cs" />
@@ -187,9 +188,11 @@
      <Compile Include="Assets\Scripts\HighScoreManager2.cs" />
      <Compile Include="Assets\Scripts\HighScoreScript.cs" />
      <Compile Include="Assets\Scripts\MenuScreenController.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\OptionScript.cs" />
      <Compile Include="Assets\Scripts\QuestionData.cs" />
      <Compile Include="Assets\Scripts\QuitScript.cs" />
+     <Compile Include="Assets\Scripts\ReturnMenu.cs" />
      <Compile Include="Assets\Scripts\RoundData.cs" />
      <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\SimpleObjectPool.cs" />
@@ -237,28 +240,28 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/Mono.Data.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/Mono.Data.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.SqliteClient">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/Mono.Data.SqliteClient.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/Mono.Data.SqliteClient.dll</HintPath>
  </Reference>
  <Reference Include="System.Configuration">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/System.Configuration.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/System.Configuration.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/System.Data.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.EnterpriseServices">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/System.EnterpriseServices.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/System.EnterpriseServices.dll</HintPath>
  </Reference>
  <Reference Include="System.Security">
- <HintPath>C:/Users/April/Documents/GitHub/AptitudeTestVR/testing/Assets/PlugIns/System.Security.dll</HintPath>
+ <HintPath>C:/Users/April/Documents/AptitudeTestVR/testing/Assets/PlugIns/System.Security.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

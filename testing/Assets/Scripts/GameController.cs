@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
 	public Text questionDisplayText;
 	public Text scoreDisplayText;
 	public Text timeRemainingDisplayText;
+
 	public SimpleObjectPool answerButtonObjectPool;
 	public Transform answerButtonParent;
 	public GameObject questionDisplay;
@@ -22,6 +23,15 @@ public class GameController : MonoBehaviour {
 	private float timeRemaining;
 	private int questionIndex;
 	private int playerScore;
+	public static int category1;
+	public static int category2;
+	public static int category3;
+	public static int category4;
+	public static int category5;
+	public static int category6;
+	public static int category7;
+	public static int category8;
+	public static int category9;
 	private List<GameObject> answerButtonGameObjects = new List<GameObject> ();
 
 	// Use this for initialization
@@ -34,6 +44,15 @@ public class GameController : MonoBehaviour {
 
 		playerScore = 0;
 		questionIndex = 0;
+		category1 = 0;
+		category2 = 0;
+		category3 = 0;
+		category4 = 0;
+		category5 = 0;
+		category6 = 0;
+		category7 = 0;
+		category8 = 0;
+		category9 = 0;
 
 		ShowQuestion ();
 		isRoundActive = true;
@@ -69,6 +88,35 @@ public class GameController : MonoBehaviour {
 		if (isCorrect) {
 			playerScore += currentRoundData.pointsAddedForCorrectAnswer;
 			scoreDisplayText.text = "Score: " + playerScore.ToString ();
+		
+			QuestionData questionData = questionPool [questionIndex];
+			if (questionData.category == "1") {
+				category1 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "2") {
+				category2 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "3") {
+				category3 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "4") {
+				category4 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "5") {
+				category5 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "6") {
+				category6 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "7") {
+				category7 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "8") {
+				category8 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
+			if (questionData.category == "9") {
+				category9 += currentRoundData.pointsAddedForCorrectAnswer;
+			}
 		}
 		if (questionPool.Length > questionIndex + 1) {
 			questionIndex++;
