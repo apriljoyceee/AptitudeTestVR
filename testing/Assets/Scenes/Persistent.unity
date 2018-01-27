@@ -149,32 +149,118 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allRoundData:
-  - name: Verbal Reasoning
-    timeLimitInSeconds: 30
+  - name: Aptitude Questions
+    timeLimitInSeconds: 86400
     pointsAddedForCorrectAnswer: 1
     questions:
-    - questionText: Anong tama?
+    - questionText: Binigyan ka ng nanay at tatay mo ng regalo sa iyong kaarawan.
+        Ano ang iyong magiging reaksyon?
+      category: 8
       answers:
-      - answerText: Pawer
-        isCorrect: 0
-      - answerText: Paawer
+      - answerText: :)
         isCorrect: 1
-      - answerText: Power
+      - answerText: :|
         isCorrect: 0
-    - questionText: Sino pogi?
+      - answerText: :(
+        isCorrect: 0
+    - questionText: Piliin ang salita na katulad ng nasa saknong. (PARU-PARO)
+      category: 3
       answers:
-      - answerText: Junnie Boy
+      - answerText: bubuyog
         isCorrect: 0
-      - answerText: Jasmin
+      - answerText: gamu-gamo
+        isCorrect: 0
+      - answerText: paru-paro
         isCorrect: 1
-    - questionText: Sino pogi ulet?
+    - questionText: Piliin ang numerong kagaya ng nasa gitna. 7  2  5
+      category: 2
       answers:
-      - answerText: Sir Gatus
+      - answerText: 1
         isCorrect: 0
-      - answerText: Sir Renegado
+      - answerText: 5
         isCorrect: 0
-      - answerText: Sir Dayaoen
+      - answerText: 2
         isCorrect: 1
+      - answerText: 9
+        isCorrect: 0
+      - answerText: 10
+        isCorrect: 0
+      - answerText: 3
+        isCorrect: 0
+      - answerText: 7
+        isCorrect: 0
+    - questionText: 'Basahin ang patter: tatsulok, bilog, tatsulok, bilog, tatsulok,
+        bilog. Ano ang susunod na hugis?'
+      category: 2
+      answers:
+      - answerText: tatsulok
+        isCorrect: 1
+      - answerText: bilog
+        isCorrect: 0
+    - questionText: "Piliin ang pangalang ng larawang nasa loob ng saknong. (\u2665)"
+      category: 1
+      answers:
+      - answerText: paso
+        isCorrect: 0
+      - answerText: suso
+        isCorrect: 0
+      - answerText: siso
+        isCorrect: 0
+      - answerText: puso
+        isCorrect: 1
+    - questionText: Alin sa mga pagpipilian ang pinakamahaba?
+      category: 2
+      answers:
+      - answerText: "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022"
+        isCorrect: 0
+      - answerText: "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022"
+        isCorrect: 1
+      - answerText: "\u2022\u2022\u2022\u2022\u2022"
+        isCorrect: 0
+    - questionText: Lapis, krayola, aklat, magasin, dyaryo, tasa, baso. Alin sa mga
+        binanggit ang ginagamit na babasahin?
+      category: 2
+      answers:
+      - answerText: Lapis, krayola
+        isCorrect: 0
+      - answerText: Aklat, magasin, dyaryo
+        isCorrect: 1
+      - answerText: Tasa, baso
+        isCorrect: 0
+    - questionText: Si Lito ay may mga holen, Tatlo ang asul at dalawa ang dilaw.
+        Ilan lahat ang holen niya?
+      category: 2
+      answers:
+      - answerText: 9
+        isCorrect: 0
+      - answerText: 5
+        isCorrect: 1
+      - answerText: 1
+        isCorrect: 0
+      - answerText: 10
+        isCorrect: 0
+    - questionText: Si Liza ay may sampubg bayabas. Ipinamigay niya ang 4 na bayabas.
+        Ilan ang natira sa kanya?
+      category: 2
+      answers:
+      - answerText: anim
+        isCorrect: 1
+      - answerText: isa
+        isCorrect: 0
+      - answerText: walo
+        isCorrect: 0
+    - questionText: "Tukuyin ang bilang ng mga nota.  \u266A  \u266A  \u266A  \u266A
+        \ \u266A"
+      category: 2
+      answers:
+      - answerText: 4
+        isCorrect: 0
+      - answerText: 0
+        isCorrect: 0
+      - answerText: 5
+        isCorrect: 1
+      - answerText: 6
+        isCorrect: 0
 --- !u!1 &2007416674
 GameObject:
   m_ObjectHideFlags: 0
