@@ -16,11 +16,12 @@ public class Activate : MonoBehaviour {
 	public Text code;
 	public static string studnum;
 	public static string studnum_db;
+	public static string studname;
+	public static string gender;
+	public static int age;
 	private Boolean gazedAt;
-	private float gazeTime = 1.5f;
 	private float timer = 0f;
 	private string connectionString;
-	private bool updateOn=true;
 	public AudioSource beepaudio;
 	public AudioSource wrongaudio;
 	// Use this for initialization
@@ -44,10 +45,10 @@ public class Activate : MonoBehaviour {
 	public void Resetinator(){
 		timer = 0f;
 	}
-	IEnumerator updateOff(){
+	/*IEnumerator updateOff(){
 		yield return new WaitForSeconds (5.0f);
 		updateOn = false;
-	}
+	}*/
 
 
 	public void PointerEnter(){
@@ -95,8 +96,12 @@ public class Activate : MonoBehaviour {
 
 					using (IDataReader reader = dbCmd.ExecuteReader ()) {
 						while (reader.Read ()) {
-							studnum_db = reader.GetString (1);
-							Debug.Log ("" + studnum_db + ", " + reader.GetString (2) + " " + reader.GetString (3) + "-" + reader.GetString (4) + "-" + reader.GetInt32 (5));
+							studnum_db = reader.GetString (0);
+							gender = reader.GetString (4);
+							age = reader.GetInt32 (5);
+							studname = ""+ reader.GetString(1) + ", " + reader.GetString(2) + " "+reader.GetString(3) + ".";
+ 							//Debug.Log ("" + studnum_db + ", " + reader.GetString (2) + " " + reader.GetString (3) + "-" + reader.GetString (4) + "-" + reader.GetInt32 (5));
+							Debug.Log(studname);
 						}
 						if (String.IsNullOrEmpty(studnum_db)) {
 							wrongaudio.Play();
@@ -107,7 +112,7 @@ public class Activate : MonoBehaviour {
 							reader.Close ();
 							enabled = false;
 							beepaudio.Play();
-							SceneManager.LoadScene("TestScene");
+							SceneManager.LoadScene("Persistent");
 							yield return null;
 						}
 					}

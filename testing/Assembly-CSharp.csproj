@@ -51,7 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\backtomain.cs" />
      <Compile Include="Assets\BackToStartPanel.cs" />
+     <Compile Include="Assets\displayresults.cs" />
      <Compile Include="Assets\ErrorHandler.cs" />
      <Compile Include="Assets\GazeTimer.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
@@ -173,6 +175,8 @@
      <Compile Include="Assets\HighVolumeScript.cs" />
      <Compile Include="Assets\LowVolumeScript.cs" />
      <Compile Include="Assets\MedVolumeScript.cs" />
+     <Compile Include="Assets\MostAndLeastLearned.cs" />
+     <Compile Include="Assets\MostLeastCategory.cs" />
      <Compile Include="Assets\Scripts\Activate.cs" />
      <Compile Include="Assets\Scripts\AddButton.cs" />
      <Compile Include="Assets\Scripts\AnswerButton.cs" />
@@ -200,8 +204,13 @@
      <Compile Include="Assets\Scripts\timer.cs" />
      <Compile Include="Assets\Scripts\timercnt.cs" />
      <Compile Include="Assets\Scripts\TutorialScript.cs" />
+     <Compile Include="Assets\SendToMail.cs" />
      <Compile Include="Assets\SettingsMenu.cs" />
+     <Compile Include="Assets\sorttest.cs" />
+     <Compile Include="Assets\testfind.cs" />
+     <Compile Include="Assets\testfindgo.cs" />
      <Compile Include="Assets\VolToggleScript.cs" />
+     <Compile Include="Assets\wagsirain.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
      <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
