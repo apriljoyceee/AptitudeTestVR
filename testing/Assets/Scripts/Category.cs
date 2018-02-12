@@ -1,7 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Data;
+using Mono.Data.Sqlite;
+using System.EnterpriseServices;
+using System.Security;
+using System.Configuration;
+using System.IO;
+using System.Linq;
 
 public class Category : MonoBehaviour {
 
@@ -15,19 +23,9 @@ public class Category : MonoBehaviour {
 	public Text category8Text;
 	public Text category9Text;
 
-	public Text totalScoreText;
+	//public Text totalScoreText;
 
-	public Text most1Text;
-	public Text most2Text;
-	public Text most3Text;
-	public Text most4Text;
-	public Text most5Text;
 
-	public Text least1Text;
-	public Text least2Text;
-	public Text least3Text;
-	public Text least4Text;
-	public Text least5Text;
 	// Use this for initialization
 	void Start () {
 		category1Text.text = GameController.category1.ToString ();
@@ -39,12 +37,18 @@ public class Category : MonoBehaviour {
 		category7Text.text = GameController.category7.ToString ();
 		category8Text.text = GameController.category8.ToString ();
 		category9Text.text = GameController.category9.ToString ();
+
+	//	ConnectionDB ();
+	//	RetrieveScores ();
 	}
 
-	public void mostLearned(){
+
+	//	Debug.Log ("SORTING!!!!");
+	//	Array.Sort (categoryscores);
+	//	foreach (int value in categoryscores) {
+	//		Debug.Log (value);
 		
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		

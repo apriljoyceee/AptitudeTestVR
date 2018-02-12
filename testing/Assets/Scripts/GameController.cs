@@ -19,10 +19,18 @@ public class GameController : MonoBehaviour {
 	private RoundData currentRoundData;
 	private QuestionData[] questionPool;
 
+	//for user's thumbnail
+	public Text stud_nametext;
+	public Text stud_numtext;
+	public Text stud_agetext;
+	public Text stud_gendertext;
+	public GameObject boyheader;
+	public GameObject girlheader;
+
 	private bool isRoundActive;
 	private float timeRemaining;
 	private int questionIndex;
-	private int playerScore;
+	public static int playerScore;
 	public static int category1;
 	public static int category2;
 	public static int category3;
@@ -36,6 +44,8 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		thumbnail ();
+
 		dataContoller = FindObjectOfType<DataController> ();
 		currentRoundData = dataContoller.GetCurrentRoundData ();
 		questionPool = currentRoundData.questions;
@@ -57,6 +67,21 @@ public class GameController : MonoBehaviour {
 		ShowQuestion ();
 		isRoundActive = true;
 	}
+
+
+	private void thumbnail(){
+		stud_nametext.text = Activate.studname;
+		stud_numtext.text = "Student Num: "+Activate.studnum;
+		stud_agetext.text = ""+Activate.age.ToString ()+" YEARS OLD";
+		stud_gendertext.text = Activate.gender;
+		if (Activate.gender == "FEMALE") {
+			girlheader.SetActive (true);
+		} else {
+			boyheader.SetActive (true);
+		}
+	
+	}
+
 
 	private void ShowQuestion()
 	{
@@ -87,7 +112,7 @@ public class GameController : MonoBehaviour {
 	{
 		if (isCorrect) {
 			playerScore += currentRoundData.pointsAddedForCorrectAnswer;
-			scoreDisplayText.text = "Score: " + playerScore.ToString ();
+			scoreDisplayText.text = playerScore.ToString ();
 		
 			QuestionData questionData = questionPool [questionIndex];
 			if (questionData.category == "1") {
@@ -141,7 +166,7 @@ public class GameController : MonoBehaviour {
 
 	private void UpdateTimeRemainingDisplay()
 	{
-		timeRemainingDisplayText.text = "Time: " + Mathf.Round (timeRemaining).ToString ();
+		timeRemainingDisplayText.text = Mathf.Round (timeRemaining).ToString ();
 	}
 	// Update is called once per frame
 	void Update () {
