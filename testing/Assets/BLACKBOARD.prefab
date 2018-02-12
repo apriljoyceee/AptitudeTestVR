@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1154461970299194}
+  m_IsPrefabParent: 1
+--- !u!1 &1154461970299194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4190752002063432}
+  m_Layer: 0
+  m_Name: BLACKBOARD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1880629456565298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4471422405164522}
+  - component: {fileID: 33989197674191506}
+  - component: {fileID: 23689643411965120}
+  m_Layer: 0
+  m_Name: Mesh1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4190752002063432
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154461970299194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4626, y: 0.211, z: 0.273}
+  m_LocalScale: {x: 3.4149177, y: 4.029453, z: 4.69353}
+  m_Children:
+  - {fileID: 4471422405164522}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4471422405164522
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880629456565298}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4190752002063432}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23689643411965120
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880629456565298}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 28ae2358e43cf2c43841df5486d22f27, type: 2}
+  - {fileID: 2100000, guid: a45a833053251e84fb5a9f54385d73be, type: 2}
+  - {fileID: 2100000, guid: d94c861964e09d34880db42e57079cbd, type: 2}
+  - {fileID: 2100000, guid: 85c31247e92e6ce4a8f562ce64ebbcc2, type: 2}
+  - {fileID: 2100000, guid: 7c2ccd05cb7150b4d9bd4d066d58fa3a, type: 2}
+  - {fileID: 2100000, guid: c4a6c3beb7d13d54b9bfbea4fc15c9f5, type: 2}
+  - {fileID: 2100000, guid: 994b7dcc593bf2d4ab8a3866a0b4531d, type: 2}
+  - {fileID: 2100000, guid: 733baa18599995f4796ac5b0744be08c, type: 2}
+  - {fileID: 2100000, guid: cd79cc7084af8c1409ae1720439d5196, type: 2}
+  - {fileID: 2100000, guid: 77a18c9eea3744b40bff6c9de76a09bf, type: 2}
+  - {fileID: 2100000, guid: 68c813201a3ba404994013c9bbfc1eca, type: 2}
+  - {fileID: 2100000, guid: 7317cfb03d194ba47bf6081a5d7642ff, type: 2}
+  - {fileID: 2100000, guid: 7317cfb03d194ba47bf6081a5d7642ff, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33989197674191506
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880629456565298}
+  m_Mesh: {fileID: 4300000, guid: b973739a4ffa3304c85fcc8923efc7eb, type: 3}

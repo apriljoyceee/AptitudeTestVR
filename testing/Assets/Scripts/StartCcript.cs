@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StartCcript : MonoBehaviour {
-
 	private float gazeTime = 1.5f;
 	private float timer = 0f;
 	private bool gazedAt;
 	public AudioSource beepaudio;
-	// Use this for initialization
+	// Use this for initialization\
 	void Start () {
-		
+		//Debug.Log ("NAME OF GAME OBJECT IS: " + testfind.nameofobject);
+		//Debug.Log ("NAME OF GAME OBJECT IS: " + testfind.nameofobject);
+
+		//if (GameObject.Find (testfind.nameofobject) != null) {
+		//	Debug.Log ("IT EXISTS");
+		//}
 	}
 	
 	// Update is called once per frame
@@ -23,6 +28,7 @@ public class StartCcript : MonoBehaviour {
 			beepaudio.Play();
 			SceneManager.LoadScene("Game");
 		}
+
 	}
 
 	public void Resetinator(){
