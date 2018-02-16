@@ -25,7 +25,7 @@ public class AnswerButton : MonoBehaviour {
 			timer += Time.deltaTime;
 
 			if (timer >= gazeTime) {
-				gameController.AnswerButtonClicked (answerData.isCorrect);
+				//gameController.AnswerButtonClicked (answerData.isCorrect);
 				gazedAt=false;
 			}
 		}
