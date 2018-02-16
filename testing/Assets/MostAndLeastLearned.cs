@@ -27,8 +27,8 @@ public class MostAndLeastLearned : MonoBehaviour {
 	void Start() {
 		//for thumbnail
 		studname_text.text = Activate.studname;
-		studnum_text.text = Activate.studnum;
-		studage_text.text = Activate.age.ToString ();
+		studnum_text.text = "Student Num: " + Activate.studnum;
+		studage_text.text = Activate.age.ToString () + " YEARS OLD";
 		studgender_text.text = Activate.gender;
 		if (Activate.gender == "MALE") {
 			boythumbnail.SetActive (true);

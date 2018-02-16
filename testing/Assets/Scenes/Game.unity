@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45142323, g: 0.5008239, b: 0.57182986, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514228, g: 0.5008233, b: 0.57182896, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   stud_agetext: {fileID: 412864168}
   stud_gendertext: {fileID: 850586402}
   boyheader: {fileID: 1418440863}
-  girlheader: {fileID: 0}
+  girlheader: {fileID: 1673690247}
   questionIndex: 0
   questionIndexx: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   theArray: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -7233,6 +7233,7 @@ GameObject:
   - component: {fileID: 1310505796}
   - component: {fileID: 1310505798}
   - component: {fileID: 1310505797}
+  - component: {fileID: 1310505799}
   m_Layer: 5
   m_Name: TimeDisplay
   m_TagString: Untagged
@@ -7255,7 +7256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 162}
+  m_AnchoredPosition: {x: 10.1, y: 162}
   m_SizeDelta: {x: 138, y: 53.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310505797
@@ -7297,6 +7298,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310505795}
+--- !u!114 &1310505799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310505795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c656f4f2216f548948662fed0207d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.868}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+  m_size: 2.14
+  glintEffect: 0
+  glintVertex: 0
+  glintWidth: 0
+  glintColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1001 &1336795978
 Prefab:
   m_ObjectHideFlags: 0
@@ -9320,7 +9340,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d806ec691d2f98646892318093242852, type: 2}
+  - {fileID: 2100000, guid: 1aee1a97a3871b642a32216d986bea6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9557,7 +9577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1673690248
 RectTransform:
   m_ObjectHideFlags: 0
