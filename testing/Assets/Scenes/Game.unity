@@ -678,7 +678,7 @@ MonoBehaviour:
   stud_agetext: {fileID: 412864168}
   stud_gendertext: {fileID: 850586402}
   boyheader: {fileID: 1418440863}
-  girlheader: {fileID: 0}
+  girlheader: {fileID: 1673690247}
 --- !u!1 &234094134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,6 +3668,7 @@ GameObject:
   - component: {fileID: 1310505796}
   - component: {fileID: 1310505798}
   - component: {fileID: 1310505797}
+  - component: {fileID: 1310505799}
   m_Layer: 5
   m_Name: TimeDisplay
   m_TagString: Untagged
@@ -3690,7 +3691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 162}
+  m_AnchoredPosition: {x: 12.3, y: 162}
   m_SizeDelta: {x: 138, y: 53.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310505797
@@ -3705,7 +3706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9490196, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9310343, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3732,6 +3733,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310505795}
+--- !u!114 &1310505799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310505795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dee6270d80c0b4ea6f7e62c1138fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+  m_size: 1.73
+  glintEffect: 0
+  glintVertex: 0
+  glintWidth: 0
+  glintColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1338837461
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,7 +4344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1418440864
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4921,7 +4941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1673690248
 RectTransform:
   m_ObjectHideFlags: 0

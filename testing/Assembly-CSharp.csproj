@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\backtomain.cs" />
      <Compile Include="Assets\BackToStartPanel.cs" />
+     <Compile Include="Assets\CustomOutline.cs" />
      <Compile Include="Assets\displayresults.cs" />
      <Compile Include="Assets\ErrorHandler.cs" />
      <Compile Include="Assets\GazeTimer.cs" />

@@ -40,10 +40,19 @@ public class GameController : MonoBehaviour {
 	public static int category7;
 	public static int category8;
 	public static int category9;
+
+	public static string timeStarted;
+	public static string timeEnded;
+	private int hours;
+	private int minutes;
+	private int seconds;
+
 	private List<GameObject> answerButtonGameObjects = new List<GameObject> ();
 
 	// Use this for initialization
 	void Start () {
+		timeStarted = System.DateTime.Now.ToShortTimeString ();
+		Debug.Log (timeStarted);
 		thumbnail ();
 
 		dataContoller = FindObjectOfType<DataController> ();
@@ -157,6 +166,9 @@ public class GameController : MonoBehaviour {
 
 		questionDisplay.SetActive (false);
 		roundEndDisplay.SetActive (true);
+
+		timeEnded = System.DateTime.Now.ToShortTimeString ();
+		Debug.Log (timeEnded);
 	}
 
 	public void ReturnToMenu()
@@ -166,7 +178,10 @@ public class GameController : MonoBehaviour {
 
 	private void UpdateTimeRemainingDisplay()
 	{
-		timeRemainingDisplayText.text = Mathf.Round (timeRemaining).ToString ();
+		hours = Mathf.FloorToInt (timeRemaining % 1f);
+		minutes = Mathf.FloorToInt (timeRemaining / 60f);
+		seconds = Mathf.FloorToInt (timeRemaining - minutes * 60);
+		timeRemainingDisplayText.text = hours.ToString () + ":" + minutes.ToString () + ":" + seconds.ToString ();
 	}
 	// Update is called once per frame
 	void Update () {
@@ -175,6 +190,9 @@ public class GameController : MonoBehaviour {
 			timeRemaining -= Time.deltaTime;
 			UpdateTimeRemainingDisplay ();
 
+			if (timeRemaining < 600f) {
+				timeRemainingDisplayText.color = Color.red;
+			}
 			if (timeRemaining <= 0f) {
 				EndRound ();
 			}
